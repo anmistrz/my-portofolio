@@ -1,0 +1,91 @@
+.accordionStyle {
+    width: 100%;
+    // border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    .accordionContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        // background-color: #f1f1f1;
+        color: #8f8e8e;
+        font-weight: 600;
+
+        .accordionTitle {
+            font-size: 16px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            .accordionIcon {
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .accordionContent {
+            @media screen and (min-width: 768px) {
+                font-size: 16px;
+            }
+            font-size: 14px;
+            font-weight: 400;
+            color: #8f8e8e;
+            padding: 0 20px;
+            text-align: justify;
+            width: 100%;
+
+            .close {
+                animation: downToUp 0.5s ease-in-out;
+                display: none;
+            }        
+
+            .accordionContentText {
+                animation: upToDown 0.5s ease-in-out;
+
+                .content {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                    &:hover {
+                        color: #FFB400;
+                        font-weight: 600;
+                      }
+          
+                }
+            }
+        }
+    }
+
+
+    @keyframes upToDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+    }
+
+    @keyframes downToUp {
+        0% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+    }
+}

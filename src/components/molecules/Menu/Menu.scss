@@ -1,0 +1,41 @@
+.menuStyle {
+
+    @media screen and (min-width: 768px) {
+        .menuContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            z-index: 100;
+    
+            .menuList ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                gap: 38px;
+
+            }
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .menuContainer {
+            display: flex;
+            bottom: 0;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            .menuList ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 32px;
+            }
+        }
+        
+    }
+}

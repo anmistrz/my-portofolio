@@ -1,0 +1,36 @@
+.buttonStyle {
+    background-color: transparent;
+    border: 1px solid #FFB400;
+    margin: 0;
+    // padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(to left, transparent 50%, #FFB400 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    border-radius: 50px;
+
+    .buttonText {
+        padding: 10px 20px;
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+        }
+        font-size: 16px;
+    }
+
+    .buttonIcon {
+        float: right;
+        width: 46px;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFB400;
+        border-radius: 100%;
+    }
+}
+
+.buttonStyle:hover {
+    background-position: left;
+    color: white;
+}

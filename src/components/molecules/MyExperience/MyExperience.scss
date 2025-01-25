@@ -1,0 +1,175 @@
+.myExperienceStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+//   margin-top: 50px;
+//   margin-bottom: 50px;
+
+  .myExperienceContainer {
+    width: 100%;
+
+    .myExperienceTitle {
+        @media screen and (min-width: 768px) {        
+          font-size: 40px;
+        }
+        font-size: 34px;
+        font-weight: 600;
+        color: #ffffff;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+    }
+
+    .myExperienceContent {
+      font-size: 16px;
+      font-weight: 400;
+      color: #ffffff;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+      gap: 5px;
+      width: 100%;
+
+      .myExperienceItem {
+        display: flex;
+        // justify-content: space-around;
+        gap: 10%;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        // padding: 20px;
+        width: 100%;
+        // position: relative;
+
+        .myExperienceItemIcon{
+            width: 4px;
+            height: 100%;
+            background: #fafafa;
+            translate: translateX(-25%);
+            border-left: 2px solid #fffefb;
+            position: relative;
+            z-index: 1;
+            
+            .myExperienceIcon {
+                @media screen and (min-width: 768px) {
+                    width: 46px;
+                    height: 46px;
+                    background: #FFB400;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 2;
+                    position: absolute;
+                    left: 50%;
+                    top: 10%;
+                    transform: translate(-50%, -50%);
+                }
+
+                width: 38px;
+                height: 38px;
+                background: #FFB400;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 2;
+                position: absolute;
+                left: 50%;
+                top: 5%;
+                transform: translate(-50%, -50%);
+            }
+
+            .icon {
+                z-index: 3;
+            }
+        }
+
+        .myExperienceItemContent {
+          font-size: 16px;
+          font-weight: 400;
+          color: #ffffff;
+
+          .myExperienceItemDate {
+            @media screen and (min-width: 768px) {
+                font-size: 16px;
+                font-weight: 600;
+                background-color: #646566;
+                color: #ffffff;
+                border-radius: 40px;
+                padding: 2px;
+                text-align: center;
+                margin-bottom: 14px;
+                width: 50%;
+            }
+
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #646566;
+            color: #ffffff;
+            border-radius: 40px;
+            padding: 2px;
+            text-align: center;
+            margin-bottom: 14px;
+            width: 80%;
+          }
+
+          .myExperienceItemTitle {
+            @media screen and (min-width: 768px) {
+                font-size: 32px;
+            }
+            font-size: 28px;
+            font-weight: 600;
+            color: #f6f6f6;
+          }
+
+          .myExperienceItemCompany {
+            @media screen and (min-width: 768px) {
+                font-size: 20px;
+            }
+            font-size: 16px;
+            font-weight: 600;
+            color: #f6f6f6;
+            margin-bottom: 18px;
+          }
+
+          .myExperienceItemDesc {
+            @media screen and (min-width: 768px) {
+                font-size: 20px;
+            }
+            font-size: 14px;
+            font-weight: 400;
+            color: #8f8e8e;
+            margin-bottom: 18px;
+          }
+
+          .myExperienceItemDetail {
+            margin-bottom: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .myExperienceItemDetailItem {
+
+              .myExperienceItemDetailDesc {
+                @media screen and (min-width: 768px) {
+                    font-size: 16px;
+                }
+                font-size: 14px;
+                font-weight: 400;
+                color: #8f8e8e;
+
+                &:hover {
+                  color: #FFB400;
+                  font-weight: 600;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

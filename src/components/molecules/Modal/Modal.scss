@@ -1,0 +1,160 @@
+.modalStyle {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0,0.6);
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #363636;
+        border-radius: 10px;
+    }
+
+    ::-webkit-slider-runnable-track {
+        background-color: #6d6d6d;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #FFB400;
+    }
+
+    .modalClose {
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        position: absolute;
+        right: 10%;
+        top: 2%;
+        text-align: center;
+        border-radius: 100%;
+        border: 4px solid #FFB400;
+
+        @media screen and (min-width: 768px) {
+            width: 60px;
+            height: 60px;    
+        }
+
+        width: 40px;
+        height: 40px;
+
+        &:hover,
+        &:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .modalCloseButton {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .modalContainer {
+        background-color: #0f0e0e;
+        margin: auto;
+        padding: 40px;
+        border: 1px solid #3d3d3d;
+        border-radius: 10px;
+        z-index: 10;
+        max-height: 80vh;
+        overflow-y: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        @media screen and (min-width: 768px) {
+            width: 80%;
+        }
+
+        width: 90%;
+
+        .modalHeader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            width: 100%;
+            .shadowTitle {
+                @media screen and (min-width: 768px) {
+                    font-size: 100px;
+                    letter-spacing: 20px;
+                    line-height: 0.7;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    position: relative;
+                    z-index: 1;
+                    transform: translateY(5%);
+                    color: rgba(255, 255, 255, 0.07);          
+                }
+                font-size: 60px;
+                letter-spacing: 10px;
+                line-height: 0.7;
+                text-transform: uppercase;
+                font-weight: bold;
+                position: relative;
+                z-index: 1;
+                transform: translateY(5%);
+                color: rgba(255, 255, 255, 0.07);
+            }
+            .modalTitle {
+                @media screen and (min-width: 768px) {
+                    font-size: 60px;
+                    font-weight: 600;
+                    position: absolute;
+                    text-transform: uppercase;
+                    z-index: 2;         
+                }
+
+                font-size: 30px;
+                font-weight: bold;
+                position: absolute;
+                text-transform: uppercase;
+                z-index: 2;
+            }
+        }
+        .modalBody {
+            padding: 20px;
+            width: 100%;
+            .modalContent {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        .modalFooter {
+            display: flex;
+            justify-content: flex-end;
+            .modalButton {
+                background-color: #FFB400;
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 600;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: #FFB400;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
