@@ -15,7 +15,7 @@ import { listExperience } from '@/myData/experience/listExperience';
 export default function AboutMe() {
 
   const handleDownloadCV = () => {
-    window.open("https://drive.google.com/file/d/1AxQdu9Y1yF5l8WJnrgC_v99KDbnFYG3C/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/drive/folders/1S0U9O_94okUmRAdLF5Hj1Sy8LIrk9gdW?usp=sharing", "_blank");
   }
 
   return (
