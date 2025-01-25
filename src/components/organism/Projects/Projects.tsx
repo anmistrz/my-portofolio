@@ -37,7 +37,7 @@ export default function Projects() {
           <div className="w-full sm:w-1/2">
             <Title 
               title="My" 
-              secondTitle="Protofolio" 
+              secondTitle="Portofolio" 
               shadowTitle="Works" 
             />
           </div>
