@@ -8,7 +8,7 @@ export default function Menu() {
     const router = useRouter()
     const pathname = usePathname()
     const pathNow = pathname.split('/')[1]
-    console.log('pathNow', pathNow)
+
   return (
     <div className='menuStyle'>
         <div className='menuContainer'>
