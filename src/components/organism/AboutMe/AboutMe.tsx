@@ -19,14 +19,14 @@ export default function AboutMe() {
   }
 
   return (
-    <div className="max-h-[100vh] max-w-screen bg-[#000000] h-full text-white overflow-y-auto scrollbar">
+    <div className="max-h-[100vh] max-w-screen bg-[#000000] h-full text-white  overflow-y-auto scrollbar">
 
         <div className="sm:h-1/2 absolute sm:right-8 sm:bottom-28 bottom-0 right-[0px]
           h-[70px] bg-[#212529] z-[1000] py-4 px-6 sm:py-0 sm:px-0 sm:bg-transparent sm:w-auto w-full">
           <Menu />
         </div>
 
-        <div className="flex flex-col items-center justify-center h-full py-24 px-12 gap-12">
+        <div className="flex flex-col items-center justify-center h-full py-24 px-12 gap-12  animate-fadeIn">
           <div className="w-full sm:w-1/2">
             <Title 
               title="About" 
