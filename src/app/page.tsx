@@ -24,9 +24,9 @@ export default function Home() {
   }
 
   return (
-    <div className="max-h-[100vh] max-w-screen bg-[#000000] text-white sm:overflow-hidden overflow-y-auto">
-      <div className="flex w-full h-full sm:justify-between sm:gap-[12vw] py-8 px-10 sm:p-0  animate-fadeIn">
-        <div className="">
+    <div className="max-h-[100vh] max-w-screen bg-[#000000] h-full text-white sm:overflow-hidden overflow-y-auto">
+      <div className="flex w-full h-full sm:justify-between sm:gap-[12vw] py-2 px-10 sm:p-0">
+        <div className=" animate-fadeIn">
           <div className="lg:w-[25vw] lg:h-0 lg:border-b-[100vh] lg:border-b-[#FFB400] 
               lg:border-l-transparent lg:border-r-[25vh] lg:border-r-transparent sm:d-none"
           >
@@ -43,8 +43,8 @@ export default function Home() {
             />
             </div>
         </div>
-        <div className="w-full sm:mt-[10vh] lg:mt-[28vh] d-flex flex-col justify-center items-center gap-12">
-          <div className="w-[150px] mb-12 sm:hidden h-[190px] sm:rounded-3xl shadow-2xl relative top-[10%] left-[50%] transform translate-x-[-50%] translate-y-[-25%]">
+        <div className="w-full h-full sm:mt-[18vh] lg:mt-[32] d-flex flex-col justify-center items-center py-24  animate-fadeIn">
+          <div className="w-[150px] mb-8 sm:hidden h-[190px] sm:rounded-3xl shadow-2xl relative top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-25%]">
             <Image 
               src="/profile.jpg"
               layout="fill"
@@ -53,13 +53,13 @@ export default function Home() {
               alt={""} 
             />
           </div>
-          <div className="sm:w-[55vw] sm:h-[40vh] w-[80vw] h-[50vh] d-flex flex-col justify-center items-center gap-12">
-            <div className="w-full mb-12">
+          <div className="sm:w-[55vw] sm:h-[40vh] w-[80vw] h-[50vh] d-flex flex-col justify-center items-center gap-2 mb-2">
+            <div className="w-full mb-8">
               <p className="text-[#FFB400] sm:text-6xl text-4xl  sm:text-left text-center mb-2">{"I'm  Anas Ardiansyah"}</p>
               <p className="text-white sm:text-4xl text-2xl sm:text-left text-center mb-2">Looking for a new <span className="text-[#FFB400]">opportunity</span></p>
             </div>
             <div className="w-full mb-12">
-              <p className="text-white text-xl sm:text-left text-center">
+              <p className="text-white sm:text-xl text-md sm:text-left text-center">
                 I am a lifetime learner person, highly motivated to explore any knowledge and do self-development to be a better person. 
                 My main characteristic is being a critical thinker and detail-oriented person. Currently having a big interest in UI/UX 
                 design, Software Quality Assurance, and Web Development. I polished my communication skills through some lecturing 
@@ -78,7 +78,7 @@ export default function Home() {
                 onClick={() => setIsModal(!isModal)}
               />
             </div>
-            <div className="w-full sm:hidden mb-24">
+            <div className="w-full sm:hidden">
              <Button 
                 width="80vw" 
                 height="6vh" 

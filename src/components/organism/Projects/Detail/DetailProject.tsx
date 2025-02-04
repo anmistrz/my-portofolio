@@ -25,9 +25,9 @@ export default function DetailProject({data}: IDetailProject) {
     }
 
   return (
-    <div className="max-h-[100vh] max-w-screen bg-[#000000] text-white overflow-y-auto scrollbar mb-12">
+    <div className="max-h-[100vh] max-w-screen bg-[#000000] text-white h-full overflow-y-auto scrollbar">
 
-        <div className="sm:h-1/2 fixed sm:right-8 sm:bottom-28 bottom-0 right-[0px]
+        <div className="sm:h-1/2 absolute sm:right-8 sm:bottom-28 bottom-0 right-[0px]
             h-[70px] bg-[#212529] py-4 px-6 sm:py-0 sm:px-0 sm:bg-transparent sm:w-auto w-full z-50">
             <Menu />
         </div>
@@ -101,8 +101,9 @@ export default function DetailProject({data}: IDetailProject) {
                 {/* <h1>{data.technology}</h1>
                 <h1>{data.link}</h1> */}
             </div>
+            
+            <ButtonBack onClick={backToProject} />
         </div>
-        <ButtonBack onClick={backToProject} />
     </div>
   )
 }
