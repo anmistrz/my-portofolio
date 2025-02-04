@@ -33,13 +33,21 @@
         .accordionContent {
             @media screen and (min-width: 768px) {
                 font-size: 16px;
+                font-weight: 400;
+                color: #8f8e8e;
+                padding: 0 20px;
+                text-align: justify;
+                width: 100%;
             }
-            font-size: 14px;
-            font-weight: 400;
-            color: #8f8e8e;
-            padding: 0 20px;
-            text-align: justify;
-            width: 100%;
+
+            @media screen and (max-width: 640px) {
+                font-size: 14px;
+                font-weight: 400;
+                color: #8f8e8e;
+                padding: 0 20px;
+                text-align: justify;
+                width: 100%;
+            }
 
             .close {
                 animation: downToUp 0.5s ease-in-out;

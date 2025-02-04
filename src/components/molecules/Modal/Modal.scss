@@ -43,9 +43,11 @@
             width: 60px;
             height: 60px;    
         }
-
-        width: 40px;
-        height: 40px;
+        
+        @media screen and (max-width: 768px) {
+            width: 40px;
+            height: 40px;
+        }
 
         &:hover,
         &:focus {
@@ -79,7 +81,9 @@
             width: 80%;
         }
 
-        width: 90%;
+        @media screen and (max-width: 768px) {
+            width: 90%;
+        }
 
         .modalHeader {
             display: flex;
@@ -99,15 +103,18 @@
                     transform: translateY(5%);
                     color: rgba(255, 255, 255, 0.07);          
                 }
-                font-size: 60px;
-                letter-spacing: 10px;
-                line-height: 0.7;
-                text-transform: uppercase;
-                font-weight: bold;
-                position: relative;
-                z-index: 1;
-                transform: translateY(5%);
-                color: rgba(255, 255, 255, 0.07);
+
+                @media screen and (max-width: 768px) {
+                    font-size: 60px;
+                    letter-spacing: 10px;
+                    line-height: 0.7;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    position: relative;
+                    z-index: 1;
+                    transform: translateY(5%);
+                    color: rgba(255, 255, 255, 0.07);
+                }
             }
             .modalTitle {
                 @media screen and (min-width: 768px) {
@@ -118,11 +125,13 @@
                     z-index: 2;         
                 }
 
-                font-size: 30px;
-                font-weight: bold;
-                position: absolute;
-                text-transform: uppercase;
-                z-index: 2;
+                @media screen and (max-width: 768px) {
+                    font-size: 30px;
+                    font-weight: bold;
+                    position: absolute;
+                    text-transform: uppercase;
+                    z-index: 2;
+                }
             }
         }
         .modalBody {

@@ -1,18 +1,28 @@
 .skillsStyle {
   margin-top: 20px;
   margin-bottom: 20px;
+  
     .skillsContainer {
         .skillsTitle {
             @media screen and (min-width: 768px) {        
                 font-size: 40px;
-              }
-            font-size: 34px;
-            font-weight: 600;
-            color: #ffffff;
-            width: 100%;
-            text-align: center;
-            margin-bottom: 20px;
-            text-transform: uppercase;
+                font-weight: 600;
+                color: #ffffff;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 34px;
+                font-weight: 600;
+                color: #ffffff;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
         }
         .skillsContent {
             font-size: 16px;
